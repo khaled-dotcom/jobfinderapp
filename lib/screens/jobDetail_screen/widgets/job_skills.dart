@@ -6,7 +6,8 @@ class JobSkill extends StatefulWidget {
 }
 
 class _JobSkillState extends State<JobSkill> {
-  final listSkill=['On-site in Yogyakarta',
+  final listSkill = [
+    'On-site in Yogyakarta',
     'Good Communication with clients',
     'Have a good portfolio',
     'Good at using animation',
@@ -18,19 +19,23 @@ class _JobSkillState extends State<JobSkill> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          child: Text("Skills",style: TextStyle(fontSize: 20.0,color: Colors.black,fontWeight: FontWeight.bold)),
+          child: Text("Skills",
+              style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold)),
         ),
         Container(
           height: 200,
           child: ListView.builder(
-            physics: BouncingScrollPhysics(),
+              physics: BouncingScrollPhysics(),
               itemCount: listSkill.length,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                   margin: EdgeInsets.symmetric(vertical: 8),
                   child: Row(
                     children: [
-
+                      // dot of skills part
                       Container(
                         width: 8,
                         height: 8,
@@ -39,11 +44,11 @@ class _JobSkillState extends State<JobSkill> {
                           shape: BoxShape.circle,
                         ),
                       ),
-
                       SizedBox(
                         width: 16,
                       ),
 
+                      //skills details
                       Flexible(
                         child: Text(
                           listSkill[index],
@@ -54,15 +59,12 @@ class _JobSkillState extends State<JobSkill> {
                           ),
                         ),
                       ),
-
                     ],
                   ),
                 );
-              }
-          ),
+              }),
         ),
       ],
     );
-
   }
 }
