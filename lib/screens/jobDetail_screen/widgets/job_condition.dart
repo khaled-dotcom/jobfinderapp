@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class WorkDetails extends StatefulWidget {
+class JobCondition extends StatefulWidget {
   @override
-  _WorkDetailsState createState() => _WorkDetailsState();
+  _JobConditionState createState() => _JobConditionState();
 }
 
-class _WorkDetailsState extends State<WorkDetails> {
+class _JobConditionState extends State<JobCondition> {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
           height: 90,
-          width: 90,
+          width: MediaQuery.of(context).size.width/3.5,
           child: Card(
             child: Image.asset("assets/images/keitito1.png"),
           ),
@@ -52,3 +52,4 @@ class _WorkDetailsState extends State<WorkDetails> {
     );
   }
 }
+
