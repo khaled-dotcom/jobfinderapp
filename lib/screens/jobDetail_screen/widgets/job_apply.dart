@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class JobApply extends StatefulWidget {
   @override
   _JobApplyState createState() => _JobApplyState();
@@ -20,45 +21,46 @@ class _JobApplyState extends State<JobApply> {
             ),
           ),
           decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.white,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.deepOrange.withOpacity(0.1),
-                spreadRadius: 3,
-                blurRadius: 3,
-                offset: Offset(0, 4),
-              )
-            ]
-          ),
+              shape: BoxShape.circle,
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.deepOrange.withOpacity(0.1),
+                  spreadRadius: 3,
+                  blurRadius: 3,
+                  offset: Offset(0, 4),
+                )
+              ]),
         ),
-
         SizedBox(
           width: 16,
         ),
-
         Expanded(
-          child: Container(
-            height: 60,
-            decoration: BoxDecoration(
-              color: Colors.deepOrange,
-              borderRadius: BorderRadius.all(
-                Radius.circular(10),
+          child: GestureDetector(
+            child: Container(
+              height: 60,
+              decoration: BoxDecoration(
+                color: Colors.deepOrange,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
               ),
-            ),
-            child: Center(
-              child: Text(
-                "Apply Now",
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+              child: Center(
+                child: Text(
+                  "Apply Now",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),
+            onTap: () {
+              //next screen navigation
+            },
           ),
         ),
-
       ],
     );
   }
