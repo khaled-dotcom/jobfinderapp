@@ -24,14 +24,19 @@ class _JobDescriptionState extends State<JobDescription> {
           ),
 
           // description
-          Text(
-            "Your job is to design an application or website that is as attractive and creative as possible."
-            "here you work fulltime and have to be diligent and beable to use animation to make it more interesting",
-            style: TextStyle(
-                fontSize: 15.0,
-                color: Colors.black54,
-                letterSpacing: 0.5,
-                height: 1.5),
+          RichText(
+            text: TextSpan(text:"Your job is to design an application or website that is as attractive and creative as possible."
+                "here you work fulltime and have to be diligent and beable to use animation to make it more interesting,",
+                style: TextStyle(
+                    fontSize: 15.0,
+                    color: Colors.black54,
+                    letterSpacing: 0.5,
+                    height: 1.5),
+                children: [TextSpan(text:"Read More...",style: TextStyle(color: Colors.deepOrange,fontSize: 15.0,
+                    letterSpacing: 0.5,
+                    height: 1.5))]
+            ),
+
           ),
         ]));
   }
