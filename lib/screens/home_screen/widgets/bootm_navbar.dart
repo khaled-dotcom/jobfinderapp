@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+
 class BottomNavBar extends StatefulWidget {
   @override
   _BottomNavBarState createState() => _BottomNavBarState();
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  int _curIndex=0;
+  int _curIndex = 0;
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -20,6 +21,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         setState(() => _curIndex = value);
         // Respond to item press.
       },
+      //bottom navigationbar items
       items: [
         BottomNavigationBarItem(
           title: Text('Home'),
