@@ -97,7 +97,6 @@ class _PopularJobState extends State<PopularJob> {
                         FittedBox(
                           fit: BoxFit.fitWidth,
                           child: Column(
-
                             children: [
                               Text(listItem[index]['title'],
                                   style: TextStyle(
@@ -109,7 +108,6 @@ class _PopularJobState extends State<PopularJob> {
                             ],
                           ),
                         ),
-
                         Flexible(child: Icon(Icons.bookmark_outline))
                       ],
                     ),
@@ -143,6 +141,8 @@ class _PopularJobState extends State<PopularJob> {
               ),
             ),
           ),
+
+          // show next screen by click
           onTap: () {
             if (index == 0)
               Navigator.push(
