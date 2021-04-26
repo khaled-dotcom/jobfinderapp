@@ -4,7 +4,7 @@ import 'package:jobfinder/screens/jobDetail_screen/widgets/job_description.dart'
 import 'package:jobfinder/screens/jobDetail_screen/widgets/job_detail_header.dart';
 import 'package:jobfinder/screens/jobDetail_screen/widgets/job_skills.dart';
 import 'package:jobfinder/screens/jobDetail_screen/widgets/job_status.dart';
-import 'package:jobfinder/screens/jobDetail_screen/widgets/work_details.dart';
+import 'package:jobfinder/screens/jobDetail_screen/widgets/job_condition.dart';
 
 class JobDetail extends StatefulWidget {
   @override
@@ -25,7 +25,7 @@ class _JobDetailState extends State<JobDetail> {
                 SizedBox(
                   height: 30.0,
                 ),
-                WorkDetails(), //logo-work duration-work position
+                JobCondition(), //logo-work duration-work position
                 SizedBox(
                   height: 20.0,
                 ),
