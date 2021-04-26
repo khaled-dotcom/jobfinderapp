@@ -26,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                               // menu icon
                     Container(
                       height: 40,
                       width: 40,
@@ -37,6 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(20.0)
                       ),
                     ),
+
+                    //profile
                     Container(
                         height: 40,
                         width: 40,
@@ -50,6 +53,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     )
                   ],
                 ),
+
+                //welcome part
                 Padding(
                   padding: EdgeInsets.only( top: 30,bottom: 30),
                   child: Column(
@@ -66,14 +71,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                SearchField(),
+                SearchField(),   //search bar
                 SizedBox(height: 20,),
-                Banners(),
+                Banners(),       //banner
                 SizedBox(height: 20,),
-               JobCatagory(),
+               JobCatagory(),   //job catagory
                 SizedBox(
                   height: 30,
                 ),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -85,13 +91,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 SizedBox(
                   height: 20,
                 ),
-                PopularJob()
+                PopularJob() //popular job
 
               ],
             ),
           ),
         ),
-        bottomNavigationBar: BottomNavBar(),
+        bottomNavigationBar: BottomNavBar(),       //botoom navigation bar
 
 
     );
