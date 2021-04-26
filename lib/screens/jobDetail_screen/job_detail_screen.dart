@@ -18,25 +18,24 @@ class _JobDetailState extends State<JobDetail> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 20.0,vertical: 40.0),
+            margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 40.0),
             child: Column(
               children: [
-                JobDetailHeader(),
+                JobDetailHeader(), //header
                 SizedBox(
                   height: 30.0,
                 ),
-                WorkDetails(),
+                WorkDetails(), //logo-work duration-work position
                 SizedBox(
                   height: 20.0,
                 ),
-                JobStatus(),
-                JobDescription(),
-                JobSkill(),
+                JobStatus(), //member,likes,place
+                JobDescription(), //Job description
+                JobSkill(), //job skill
                 SizedBox(
                   height: 10.0,
                 ),
-                JobApply(),
-
+                JobApply(), // apply button
               ],
             )),
       ),
